@@ -1,3 +1,19 @@
+/* so-called wildcard selector that overrides the default browser styles */
+* {
+  /* 
+    part of the 'css reset', stops browsers applying padding
+    by default to certain elements 
+    */
+  padding: 0;
+  /* removes archaic browser margin */
+  margin: 0;
+  /* 
+    any width and height applied to blocks will now include the padding
+    and border 
+    */
+  box-sizing: border-box;
+}
+
 header {
   background-color: lightcoral;
 }
