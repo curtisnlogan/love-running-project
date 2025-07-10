@@ -2,21 +2,68 @@
 <!DOCTYPE html>
 <!-- hey! i want to write some html and i will be using english -->
 <html lang="en">
-<!-- head contains the metadata -->
-<head>
+  <!-- head contains the metadata -->
+  <head>
     <!-- This attribute declares the page's character encoding. -->
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <!--
         Sets the viewport to match the device's width and initial zoom level.
         This ensures the website is responsive and displays correctly on all devices,
         especially mobile devices.
     -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta tags for SEO -->
+    <meta
+      name="description"
+      content="Love running. Club for runners in Dublin, Ireland.
+     Urban running, trail running. Dublin docklands and Phoenix Park."
+    />
+    <meta
+      name="keywords"
+      content="love running, run, running club,
+    runners, Ireland, Dublin, sport, exercise"
+    />
     <!-- browser tab name -->
-    <title>Document</title>
-</head>
-<!-- body is what the user will see -->
-<body>
-    
-</body>
+    <title>Love Running</title>
+    <!-- favicon icon that appears in the tab bar  -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+  </head>
+  <!-- body is what the user will see -->
+  <body>
+    <!-- 
+    more broadly, it's for introductory content for its nearest ancestor sectioning
+    content or sectioning root. this can include not just navigation, 
+    but also logos, search forms, and headings.
+    -->
+    <header>Header</header>
+    <!--
+    It's designated for the primary content of the <body> of a document. 
+    A key rule is that there must not be more
+    than one <main> element per page.
+        -->
+    <main>Main content</main>
+    <!-- 
+    It represents a 
+    footer for its nearest ancestor sectioning content or sectioning root. It can
+    contain authorship information, 
+    copyright data, and links to related documents, just as you said.
+    -->
+    <footer>Footer</footer>
+  </body>
 </html>
