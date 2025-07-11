@@ -132,6 +132,21 @@ nav {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
   /* won't show by default as needs to be toggled on/off by user */
   display: none;
+  /* 
+  this ensures the absolutely positioned
+  nav dropdown panel starts at the exact bottom of its 
+  parent which is the fixed header in this case 
+  */
+  top: 100%;
+}
+
+/* when checked will display the nav elements to the user */
+#nav-toggle:checked ~ nav {
+  /* 
+  nav now behaves like a box level element in the current flow
+  when it is checked
+  */
+  display: block;
 }
 
 main {
