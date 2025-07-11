@@ -88,6 +88,14 @@ h1 {
   list-style-type: none;
 }
 
+/* 
+targets only the children of menu, in-case of nested lists
+which a descendant selector like 'menu li' would also target 
+*/
+.menu > li {
+  margin-bottom: 1.1rem;
+}
+
 main {
   background-color: lightblue;
   /* Syntax: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
