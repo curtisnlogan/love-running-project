@@ -81,6 +81,13 @@ h1 {
   color: #252525;
 }
 
+.menu {
+  /* rem is usually the superior choice over % for font related things */
+  font-size: 1.1rem;
+  letter-spacing: 0.25rem;
+  list-style-type: none;
+}
+
 main {
   background-color: lightblue;
   /* Syntax: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
