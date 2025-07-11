@@ -171,9 +171,33 @@ footer {
   background-color: orange;
 }
 
-/* media query for tablets and largers (768px typical standard) */
+/* media query for tablets and larger (768px typical standard breakpoint) */
 @media screen and (min-width: 768px) {
   nav {
+    /* makes nav visible by default on desktop no toggle */
     display: block;
+    /* 
+    this is crucial as default static positioning would not allow
+    me to have any nested elements tied absolutely to the nav bar
+    for example if i wanted to add a pop-out search function later 
+    */
+    position: relative;
+    box-shadow: none;
+    /* ensure that as a flex item it takes up only enough space to display all content */
+    width: fit-content;
+    /* pleasent looking whitespace all around the nav elements */
+    padding: 1rem;
+  }
+  /* we want the nav elements to display as row now so this is a great way to do it */
+  .menu {
+    display: flex;
+  }
+
+  .menu > li {
+    padding: 1rem;
+  }
+
+  .nav-toggle-label {
+    display: none;
   }
 }
