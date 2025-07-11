@@ -57,6 +57,14 @@ header {
   width: 100%;
   /* complex syntax, this one creates a subtle shadow */
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  /*
+  flex row so this horizontally places the first item at the very start of the container,
+  the last item at the very end, and then distributes the remaining free space equally between the items
+  */
+  justify-content: space-between;
+  /* flex row so this vertically aligns each childs textual baselines */
+  align-items: baseline;
 }
 
 /* targets all <a> descendants of the header */
