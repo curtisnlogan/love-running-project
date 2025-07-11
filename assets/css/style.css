@@ -59,6 +59,14 @@ header {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
+/* targets all <a> descendants of the header */
+header a {
+  /* removing the default hyperlink underline */
+  text-decoration: none;
+  /* getting rid of the default blue or purple color for hyperlinks */
+  color: inherit;
+}
+
 main {
   background-color: lightblue;
   /* Syntax: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
