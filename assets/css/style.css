@@ -149,10 +149,22 @@ nav {
   display: block;
 }
 
+/* hides the checkbox as we can use the label to click it  */
+#nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  font-size: 2rem;
+}
+
 main {
   background-color: lightblue;
   /* Syntax: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
   flex: 1 0 auto;
+  /* non ideal way to make the main show again after header covered it
+  due it being taken out of normal document flow with fixed positioning */
+  margin: 47px 0 0 0;
 }
 
 footer {
