@@ -100,6 +100,32 @@ which a descendant selector like 'menu li' would also target
   border-bottom: 1px solid #252525;
 }
 
+/* dropdown menu for navigation bar */
+nav {
+  /* 
+  removes the nav bar from the normal document flow
+  takes it to another plane so to speak were it doesnt
+  interact with other blocks outside of the z layer
+  positioned by default in relation to its nearest
+  ancestor
+  */
+  position: absolute;
+  background-color: #ffffff;
+  /* take up the full width of the viewport */
+  width: 100vw;
+  /* 
+  align this absolutely positioned item to the left of its
+  parent which is in this case the fixed header which im 
+  scaling fully to the viewport interms of width 
+  */
+  left: 0;
+  /* related to font sizing as text based list so rem best */
+  padding: 0 0 0 1rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  /* won't show by default as needs to be toggled on/off by user */
+  display: none;
+}
+
 main {
   background-color: lightblue;
   /* Syntax: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
