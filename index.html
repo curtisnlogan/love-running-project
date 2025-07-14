@@ -7,9 +7,9 @@
     <!-- This attribute declares the page's character encoding. -->
     <meta charset="UTF-8" />
     <!--
-        Sets the viewport to match the device's width and initial zoom level.
-        This ensures the website is responsive and displays correctly on all devices,
-        especially mobile devices.
+      Sets the viewport to match the device's width and initial zoom level.
+      This ensures the website is responsive and displays correctly on all devices,
+      especially mobile devices.
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- meta tags for SEO -->
@@ -53,7 +53,27 @@
     content or sectioning root. this can include not just navigation, 
     but also logos, search forms, and headings.
     -->
-    <header>Header</header>
+    <header>
+      <a href="index.html">
+        <h1 class="logo">Love Running</h1>
+      </a>
+      <input type="checkbox" name="nav-toggle" id="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">X</label>
+      <nav>
+        <!-- use classes over ids by default -->
+        <ul class="menu">
+          <li>
+            <a class="active" href="http://">Home</a>
+          </li>
+          <li>
+            <a href="http://">Gallery</a>
+          </li>
+          <li>
+            <a href="http://">Sign Up</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <!--
     It's designated for the primary content of the <body> of a document. 
     A key rule is that there must not be more
