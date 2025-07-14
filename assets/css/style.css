@@ -34,7 +34,17 @@ body {
 }
 
 h1 {
+  /* note the backup font at the end */
   font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  /* 
+  more responsive than the px that was suggested 
+  to calculate take what you 
+  desire in px then divide it by the rem which is typically 16px
+  by default
+  */
+  letter-spacing: 0.125rem;
+  color: #252525;
 }
 
 header {
@@ -73,20 +83,6 @@ header a {
   text-decoration: none;
   /* getting rid of the default blue or purple color for hyperlinks */
   color: inherit;
-}
-
-h1 {
-  /* note the backup font at the end */
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  /* 
-  more responsive than the px that was suggested 
-  to calculate take what you 
-  desire in px then divide it by the rem which is typically 16px
-  by default
-  */
-  letter-spacing: 0.125rem;
-  color: #252525;
 }
 
 .menu {
