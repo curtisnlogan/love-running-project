@@ -33,7 +33,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-h1 {
+h1, h2, h3 {
   /* note the backup font at the end */
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
