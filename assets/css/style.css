@@ -1,5 +1,5 @@
 /* google fonts import lato light 300 */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200..700&display=swap&family=Oswald:wght@200..700&display=swap");
 
 /* so-called wildcard selector that overrides the default browser styles */
 * {
@@ -30,18 +30,192 @@ body {
   flex-direction: column;
   /* generic project styles */
   color: #3a3a3a;
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
 }
 
 header {
-  background-color: lightcoral;
+  background-color: #ffffff;
+  /* 
+  shorthand top/bottom left/right
+  rem is set in the html element by default typically at 16px
+  in modern browsers
+  */
+  padding: 0 1rem;
+  /* ensures that the header is always visible to the use for nav */
+  position: fixed;
+  /* ensure that it doesnt get buried under other content */
+  z-index: 99;
+  /* 
+  position: fixed changes default block element behaviour
+  which normally takes up all avaiable space
+  hence the need for a specific width in this case 100%
+  */
+  width: 100%;
+  /* complex syntax, this one creates a subtle shadow */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  /*
+  flex row so this horizontally places the first item at the very start of the container,
+  the last item at the very end, and then distributes the remaining free space equally between the items
+  */
+  justify-content: space-between;
+  /* flex row so this vertically aligns each childs textual baselines */
+  align-items: baseline;
+}
+
+/* targets all <a> descendants of the header */
+header a {
+  /* removing the default hyperlink underline */
+  text-decoration: none;
+  /* getting rid of the default blue or purple color for hyperlinks */
+  color: inherit;
+}
+
+h1 {
+  /* note the backup font at the end */
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  /* 
+  more responsive than the px that was suggested 
+  to calculate take what you 
+  desire in px then divide it by the rem which is typically 16px
+  by default
+  */
+  letter-spacing: 0.125rem;
+  color: #252525;
+}
+
+.menu {
+  /* rem is usually the superior choice over % for font related things */
+  font-size: 1.1rem;
+  letter-spacing: 0.25rem;
+  list-style-type: none;
+}
+
+/* 
+targets only the children of menu, in-case of nested lists
+which a descendant selector like 'menu li' would also target 
+*/
+.menu > li {
+  margin-bottom: 1.1rem;
+}
+
+.active {
+  border-bottom: 1px solid #252525;
+}
+
+/* dropdown menu for navigation bar */
+nav {
+  /* 
+  removes the nav bar from the normal document flow
+  takes it to another plane so to speak were it doesnt
+  interact with other blocks outside of the z layer
+  positioned by default in relation to its nearest
+  ancestor
+  */
+  position: absolute;
+  background-color: #ffffff;
+  /* take up the full width of the viewport */
+  width: 100vw;
+  /* 
+  align this absolutely positioned item to the left of its
+  parent which is in this case the fixed header which im 
+  scaling fully to the viewport interms of width 
+  */
+  left: 0;
+  /* related to font sizing as text based list so rem best */
+  padding: 0 0 0 1rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  /* won't show by default as needs to be toggled on/off by user */
+  display: none;
+  /* 
+  this ensures the absolutely positioned
+  nav dropdown panel starts at the exact bottom of its 
+  parent which is the fixed header in this case 
+  */
+  top: 100%;
+}
+
+/* when checked will display the nav elements to the user */
+#nav-toggle:checked ~ nav {
+  /* 
+  nav now behaves like a box level element in the current flow
+  when it is checked
+  */
+  display: block;
+}
+
+/* hides the checkbox as we can use the label to click it  */
+#nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  font-size: 2rem;
 }
 
 main {
   background-color: lightblue;
   /* Syntax: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
   flex: 1 0 auto;
+  /* non ideal way to make the main show again after header covered it
+  due it being taken out of normal document flow with fixed positioning */
+  margin: 47px 0 0 0;
 }
 
 footer {
   background-color: orange;
+}
+
+/* media query for tablets and larger (768px typical standard breakpoint) */
+@media screen and (min-width: 768px) {
+  nav {
+    /* makes nav visible by default on desktop no toggle */
+    display: block;
+    /* 
+    this is crucial as default static positioning would not allow
+    me to have any nested elements tied absolutely to the nav bar
+    for example if i wanted to add a pop-out search function later 
+    */
+    position: relative;
+    box-shadow: none;
+    /* ensure that as a flex item it takes up only enough space to display all content */
+    width: fit-content;
+    /* pleasent looking whitespace all around the nav elements */
+    padding: 1rem;
+  }
+  /* we want the nav elements to display as row now so this is a great way to do it */
+  .menu {
+    display: flex;
+  }
+
+  .menu > li {
+    padding: 1rem;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+  /* logo should probably be bigger on larger screens! */
+  .logo {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    margin: 0 0.5rem;
+  }
+  /* not ideal way to do this but main content now hidden partly by header due to
+  increased logo font size. so it needs to have a taller margin */
+  main {
+    margin: 110px 0 0 0;
+  }
+}
+/* large devices: laptops and desktops 992px and upwards */
+@media screen and (min-width: 992px) {
+  /*  */
+  .menu a:hover {
+      border-bottom: 1px solid #3a3a3a;
+    }
 }
