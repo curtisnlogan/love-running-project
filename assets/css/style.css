@@ -172,8 +172,8 @@ main {
   /* last value sets opacity in rgba */
   background-color: rgba(241, 109, 107, 0.7);
   font-size: 1.3rem;
-  
 }
+
 footer {
   background-color: orange;
 }
