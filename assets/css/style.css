@@ -171,6 +171,20 @@ footer {
   background-color: orange;
 }
 
+.social-networks {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+/* targets all descendants of type i in my social-networks list */
+.social-networks i {
+  /* use % instead of rem here as no text involved */
+  font-size: 160%;
+  padding: 5%;
+  color: #3a3a3a;
+}
 /* media query for tablets and larger (768px typical standard breakpoint) */
 @media screen and (min-width: 768px) {
   nav {
