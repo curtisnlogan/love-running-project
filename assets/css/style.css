@@ -166,12 +166,26 @@ main {
   height: 600px;
   width: 100%;
   background: url(../images/hero-image.webp) no-repeat center center/cover;
+  /* so we can position this images text in cover-text absolutely in a relative fashion to this image */
+  position: relative;
 }
 
 .cover-text {
   /* last value sets opacity in rgba */
   background-color: rgba(241, 109, 107, 0.7);
+  /* scaling the divs content responsively in this case text */
   font-size: 1.3rem;
+  /* taking the document out of the normal flow, now a relative of its nearest
+  non static default ancestor which will be the viewport if all parents have default
+  positioning */
+  position:absolute;
+  /* start it at this distance from bottom of its relatively positioned parent the hero image */
+  bottom: 30px;
+  /* scale the entire divs width, the text is content */
+  width: 80%;
+  min-height: 200px;
+  padding-top: 40px;
+  padding-left: 10px;
 }
 
 footer {
