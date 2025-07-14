@@ -163,7 +163,7 @@ main {
 }
 /* main image on home page */
 .hero {
-  max-height: 65%;
+  max-height: 65vh;
   width: 100%;
   background: url(../images/hero-image.webp) no-repeat center center/cover;
 }
