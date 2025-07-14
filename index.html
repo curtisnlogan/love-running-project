@@ -58,7 +58,7 @@
         <h1 class="logo">Love Running</h1>
       </a>
       <input type="checkbox" name="nav-toggle" id="nav-toggle" />
-      <label for="nav-toggle" class="nav-toggle-label">X</label>
+      <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
       <nav>
         <!-- use classes over ids by default -->
         <ul class="menu">
@@ -93,11 +93,19 @@
         The rel="noopener" attribute is a security feature for HTML links. 
         When you add it to an <a> tag, it prevents the new page from being able to access and control the original page that opened it. 
         -->
-        <li><a href="http://www.facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">Facebook</a></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li><a href="http://www.facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="http://www.x.com" target="_blank" rel="noopener"
+          aria-label="Visit our X page (opens in a new tab)"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="http://www.youtube.com" target="_blank" rel="noopener"
+          aria-label="Visit our Youtube page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="http://www.instagram.com" target="_blank" rel="noopener"
+          aria-label="Visit our Instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a></li>
       </ul>
     </footer>
+    <!-- 
+    will render everything that is visible first before the browser
+    moves on to the JS which can be time-consuming 
+    -->
+    <script src="https://kit.fontawesome.com/bfcb8b36c6.js" crossorigin="anonymous"></script>
   </body>
 </html>
