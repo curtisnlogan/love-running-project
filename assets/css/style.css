@@ -159,12 +159,17 @@ nav {
 }
 
 main {
-  background-color: lightblue;
   /* Syntax: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
   flex: 1 0 auto;
   /* non ideal way to make the main show again after header covered it
   due it being taken out of normal document flow with fixed positioning */
   margin: 47px 0 0 0;
+}
+/* main image on home page */
+.hero {
+  max-height: 65%;
+  width: 100%;
+  background: url(../images/hero-image.webp) no-repeat center center/cover;
 }
 
 footer {
