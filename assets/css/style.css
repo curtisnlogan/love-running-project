@@ -206,6 +206,13 @@ main {
 .reasons__list {
   margin: 0 20px 20px 20px;
 }
+/* 
+having this master div container for all of my individual list items with their 
+own divs, allows for easy targetting of all individual elements in the list 
+*/
+.reasons__list p {
+  padding: 0 20px;
+}
 
 .reasons__card-healthy {
   margin: 0 0 20px 0;
