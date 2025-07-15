@@ -207,6 +207,15 @@ main {
   margin: 0 20px 20px 20px;
 }
 
+.reasons__list div {
+  /* 
+  Think of each line of text sitting inside an invisible box. The line-height property sets the total height of that box. When you set a line-height that is larger than the font size,
+  the extra space is distributed evenly above and below the text itself. This forces the lines apart,
+  making the entire block of text appear more spread out vertically and easier to read.
+  */
+  line-height: 20px;
+}
+
 .reasons__list hr {
   border-top: 1px solid #3a3a3a;
   margin: 5px 0;
