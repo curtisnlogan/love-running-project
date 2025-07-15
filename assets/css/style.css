@@ -371,3 +371,47 @@ footer {
     border-bottom: 1px solid #3a3a3a;
     }
 }
+
+@media screen and (min-width: 1200px) {
+  .reasons__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .reasons__list > div {
+    /* 
+    `flex: 1;
+      ` is a shorthand in CSS Flexbox that sets `flex-grow: 1;
+      `,
+      `flex-shrink: 1;
+      `,
+      and `flex-basis: 0%;
+      `. This means the item will grow to fill available space,
+      shrink if needed,
+      and has an initial size of zero,
+      allowing its final size to be primarily determined by the distribution of space within the flex container. It's commonly used to make flex items share space equally and adapt responsively.
+    */
+    flex: 1;
+  }
+
+  .reasons__image {
+    order: 0;
+  }
+  
+  .reasons__mental-group {
+  order: 1;
+  }
+  
+  .reasons__mental-group > div {
+    /*  
+    Flexbox works on a single level of direct parent-child relationship. If you want a nested element to participate in a flex layout,
+    its immediate parent must be declared as a flex container (display: flex; or display: inline-flex; ). This allows you to create complex,
+    multi-dimensional layouts by nesting flex containers within each other.
+    */
+    align-self: flex-start;
+  }
+
+  .reasons__health-group > div {
+    align-self: flex-end;
+  }
+}
