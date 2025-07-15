@@ -250,6 +250,11 @@ footer {
   main {
     margin: 110px 0 0 0;
   }
+
+  .cover-text {
+    width: 35%;
+    right: 30px;
+  }
 }
 /* large devices: laptops and desktops 992px and upwards */
 @media screen and (min-width: 992px) {
