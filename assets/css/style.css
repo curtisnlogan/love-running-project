@@ -199,8 +199,12 @@ main {
   this scales font directly hence rem 
   */
   font-size: 2.8rem;
-  /* margin shorthand left-right = auto */
-  margin: 20px 0;
+  /* 
+  margin shorthand left-right = auto
+  auto centers the actual block element itself
+  text align just for the content
+  */
+  margin: 20px auto;
 }
 
 .reasons__list {
