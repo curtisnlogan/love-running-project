@@ -57,11 +57,11 @@ header {
   padding: 0 1rem;
   /* ensures that the header is always visible to the use for nav */
   position: fixed;
-  /* ensure that it doesnt get buried under other content */
+  /* ensure that it doesn't get buried under other content */
   z-index: 99;
   /* 
-  position: fixed changes default block element behaviour
-  which normally takes up all avaiable space
+  position: fixed changes default block element behavior
+  which normally takes up all available space
   hence the need for a specific width in this case 100%
   */
   width: 100%;
