@@ -345,6 +345,14 @@ footer {
     width: 35%;
     right: 30px;
   }
+
+  .reasons__health-group {
+    display: flex;
+  }
+
+  .reasons__mental-group {
+    display: flex;
+  }
 }
 /* large devices: laptops and desktops 992px and upwards */
 @media screen and (min-width: 992px) {
