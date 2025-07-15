@@ -345,13 +345,23 @@ footer {
     width: 35%;
     right: 30px;
   }
-
-  .reasons__health-group {
+  /*
+  does not merge these two divs in-to one flex container
+  merely a quick way to apply flex to both classes at once
+  */
+  .reasons__health-group, .reasons__mental-group {
     display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 
-  .reasons__mental-group {
-    display: flex;
+  .reasons__health-group > div, .reasons__mental-group > div {
+    width: 75%;
+  }
+
+  .reasons__mental-group > div {
+    text-align: end;
+    align-self: flex-end;
   }
 }
 /* large devices: laptops and desktops 992px and upwards */
