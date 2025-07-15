@@ -73,7 +73,7 @@ header {
   the last item at the very end, and then distributes the remaining free space equally between the items
   */
   justify-content: space-between;
-  /* flex row so this vertically aligns each childs textual baselines */
+  /* flex row so this vertically aligns each child's textual baselines */
   align-items: baseline;
 }
 
@@ -108,7 +108,7 @@ which a descendant selector like 'menu li' would also target
 nav {
   /* 
   removes the nav bar from the normal document flow
-  takes it to another plane so to speak were it doesnt
+  takes it to another plane so to speak were it doesn't
   interact with other blocks outside of the z layer
   positioned by default in relation to its nearest
   ancestor
@@ -120,7 +120,7 @@ nav {
   /* 
   align this absolutely positioned item to the left of its
   parent which is in this case the fixed header which im 
-  scaling fully to the viewport interms of width 
+  scaling fully to the viewport in-terms of width 
   */
   left: 0;
   /* related to font sizing as text based list so rem best */
@@ -227,7 +227,7 @@ main {
 
 /* 
 having this master div container for all of my individual list items with their 
-own divs, allows for easy targetting of all individual elements in the list 
+own divs, allows for easy targeting of all individual elements in the list 
 */
 .reasons__list p {
   padding: 0 20px;
@@ -251,6 +251,35 @@ own divs, allows for easy targetting of all individual elements in the list
   so to have additional whitespace here would require the use of padding
   */
   padding: 0 0 20px 0;
+}
+
+.reasons__circle-cover-bg {
+  /* 
+  shorthand:
+  color
+  image
+  repeat
+  position/size
+  */
+  background: url(../images/reasons-image.webp) no-repeat top center / cover;
+  /* already have the 20px bottom margin through its parents parent container */
+  margin: 0 auto;
+  /* 
+  these two values below create a perfect square 
+  because both the width and the height are being measured with the same "ruler"(vw),
+  setting them to the same value (90vw) forces them to be equal in length. An object with equal width and height is a perfect square.
+  */
+  width: 90vw;
+  height: 90vw;
+  /* this creates a circle from the perfect square above */
+  border-radius: 50%;
+  /* 
+  ensures it doesn't take up too much of the viewport in landscape mode on phone
+  if not will overflow as the width is a much larger measurement 
+  than the height of the available viewport in landscape mode
+  */
+  max-width: 300px;
+  max-height: 300px;
 }
 
 footer {
@@ -285,7 +314,7 @@ footer {
     box-shadow: none;
     /* ensure that as a flex item it takes up only enough space to display all content */
     width: fit-content;
-    /* pleasent looking whitespace all around the nav elements */
+    /* pleasant looking whitespace all around the nav elements */
     padding: 1rem;
   }
   /* we want the nav elements to display as row now so this is a great way to do it */
