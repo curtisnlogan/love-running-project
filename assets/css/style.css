@@ -207,6 +207,26 @@ main {
   margin: 0 20px 20px 20px;
 }
 
+.reasons__card-healthy {
+  margin: 0 0 20px 0;
+}
+
+.reasons__card-strong {
+  margin: 0 0 20px 0;
+}
+
+.reasons__card-free {
+  margin: 0 0 20px 0;
+}
+
+.reasons__card-social {
+  /* 
+  the div container for this list already adding 20px margin to bottom
+  so to have additional whitespace here would require the use of padding
+  */
+  padding: 0 0 20px 0;
+}
+
 footer {
   background-color: orange;
 }
