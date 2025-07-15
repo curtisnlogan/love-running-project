@@ -206,6 +206,12 @@ main {
 .reasons__list {
   margin: 0 20px 20px 20px;
 }
+
+.reasons__list hr {
+  border-top: 1px solid #3a3a3a;
+  margin: 5px 0;
+}
+
 /* 
 having this master div container for all of my individual list items with their 
 own divs, allows for easy targetting of all individual elements in the list 
