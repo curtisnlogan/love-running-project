@@ -187,6 +187,10 @@ main {
   padding-top: 40px;
   padding-left: 10px;
 }
+/* targets the h2 and h3 children of the cover-text div */
+.cover-text > h2, .cover-text > h3 {
+  color: #ffffff;
+}
 
 footer {
   background-color: orange;
