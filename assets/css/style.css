@@ -192,6 +192,17 @@ main {
   color: #ffffff;
 }
 
+.reasons__title {
+  text-align: center;
+  /* 
+  converted from the 280% that was suggested
+  this scales font directly hence rem 
+  */
+  font-size: 2.8rem;
+  /* margin shorthand left-right = auto */
+  margin: 20px 0;
+}
+
 footer {
   background-color: orange;
 }
