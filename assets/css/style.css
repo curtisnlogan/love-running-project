@@ -283,6 +283,12 @@ own divs, allows for easy targeting of all individual elements in the list
 }
 
 .meetups__times {
+  display: flex;
+  /*
+  this allows the flex box to place children on multiple lines instead of 
+  just one which is the default behavior 
+  */
+  flex-wrap: wrap;
   /* background shorthand in the correct expected order */
   background: url(../images/dublin-city.webp) no-repeat center / cover;
 }
