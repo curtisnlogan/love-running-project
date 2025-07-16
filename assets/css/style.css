@@ -324,6 +324,10 @@ own divs, allows for easy targeting of all individual elements in the list
 .gallery__photos img {
   /* ensures all gallery images do not leave any whitespace */
   width: 100%;
+  /* 
+  This is the most frequent and effective solution. It aligns the bottom of the image with the bottom of the line box, eliminating the space. Other values like middle, top, or text-bottom can also work depending on your desired alignment.
+  */
+  vertical-align: bottom;
 }
 
 footer {
