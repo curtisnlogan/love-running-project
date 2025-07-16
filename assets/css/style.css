@@ -296,6 +296,14 @@ own divs, allows for easy targeting of all individual elements in the list
   background: url(../images/dublin-city.webp) no-repeat center / cover;
 }
 
+.meetups__times div {
+  /* off white */
+  color: #fafafa;
+  /* rgba for that useful opacity value at the very end */
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
 footer {
   background-color: orange;
 }
