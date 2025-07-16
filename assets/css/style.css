@@ -320,6 +320,16 @@ own divs, allows for easy targeting of all individual elements in the list
   color: #fafafa;
 }
 
+/* gallery page */
+.gallery__photos img {
+  /* ensures all gallery images do not leave any whitespace */
+  width: 100%;
+  /* 
+  This is the most frequent and effective solution. It aligns the bottom of the image with the bottom of the line box, eliminating the space. Other values like middle, top, or text-bottom can also work depending on your desired alignment.
+  */
+  vertical-align: bottom;
+}
+
 footer {
   background-color: orange;
 }
@@ -338,6 +348,14 @@ footer {
   padding: 5%;
   color: #3a3a3a;
 }
+
+@media screen and (min-width: 576px) {
+  .gallery__photos {
+    column-count: 2;
+    column-gap: 0;
+  }
+}
+
 /* media query for tablets and larger (768px typical standard breakpoint) */
 @media screen and (min-width: 768px) {
   nav {
@@ -403,12 +421,22 @@ footer {
     text-align: end;
     align-self: flex-end;
   }
+
+  .gallery__photos {
+    column-count: 3;
+    column-gap: 0;
+  }
 }
 /* large devices: laptops and desktops 992px and upwards */
 @media screen and (min-width: 992px) {
   /*  */
   .menu a:hover {
     border-bottom: 1px solid #3a3a3a;
+  }
+
+  .gallery__photos {
+    column-count: 4;
+    column-gap: 0;
   }
 }
 
