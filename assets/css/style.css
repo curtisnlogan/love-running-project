@@ -33,7 +33,9 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
   /* note the backup font at the end */
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
@@ -178,7 +180,7 @@ main {
   /* taking the document out of the normal flow, now a relative of its nearest
   non static default ancestor which will be the viewport if all parents have default
   positioning */
-  position:absolute;
+  position: absolute;
   /* start it at this distance from bottom of its relatively positioned parent the hero image */
   bottom: 30px;
   /* scale the entire divs width, the text is content */
@@ -188,7 +190,8 @@ main {
   padding-left: 10px;
 }
 /* targets the h2 and h3 children of the cover-text div */
-.cover-text > h2, .cover-text > h3 {
+.cover-text > h2,
+.cover-text > h3 {
   color: #ffffff;
 }
 
@@ -360,13 +363,15 @@ footer {
   does not merge these two divs in-to one flex container
   merely a quick way to apply flex to both classes at once
   */
-  .reasons__health-group, .reasons__mental-group {
+  .reasons__health-group,
+  .reasons__mental-group {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  .reasons__health-group > div, .reasons__mental-group > div {
+  .reasons__health-group > div,
+  .reasons__mental-group > div {
     width: 75%;
   }
 
@@ -380,7 +385,7 @@ footer {
   /*  */
   .menu a:hover {
     border-bottom: 1px solid #3a3a3a;
-    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -408,11 +413,11 @@ footer {
   .reasons__image {
     order: 0;
   }
-  
+
   .reasons__mental-group {
-  order: 1;
+    order: 1;
   }
-  
+
   .reasons__mental-group > div {
     /*  
     Flexbox works on a single level of direct parent-child relationship. If you want a nested element to participate in a flex layout,
