@@ -320,6 +320,12 @@ own divs, allows for easy targeting of all individual elements in the list
   color: #fafafa;
 }
 
+/* gallery page */
+.gallery__photos img {
+  /* ensures all gallery images do not leave any whitespace */
+  width: 100%;
+}
+
 footer {
   background-color: orange;
 }
