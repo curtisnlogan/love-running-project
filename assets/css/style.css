@@ -308,6 +308,7 @@ own divs, allows for easy targeting of all individual elements in the list
   /* rgba for that useful opacity value at the very end */
   background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
+  border: 2px solid white;
 }
 
 .meetups__times h3 {
