@@ -304,6 +304,11 @@ own divs, allows for easy targeting of all individual elements in the list
   text-align: center;
 }
 
+.meetups__times h3 {
+  /* override the heading color set in the more general styles near top */
+  color: #fafafa;
+}
+
 footer {
   background-color: orange;
 }
