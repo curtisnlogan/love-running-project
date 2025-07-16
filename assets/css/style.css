@@ -329,6 +329,18 @@ own divs, allows for easy targeting of all individual elements in the list
   */
   vertical-align: bottom;
 }
+/* signup webpage */
+.main__flex {
+  display: flex;
+}
+
+.signup {
+  background: url(../images/signup-image.webp) center / cover;
+  flex: 1 auto;
+  /* targeting what position in the image itself, i want to be my center point */
+  background-position: 80%;
+}
+
 
 footer {
   background-color: orange;
