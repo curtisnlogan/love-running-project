@@ -49,6 +49,10 @@ h3 {
   color: #252525;
 }
 
+.meetups__hidden-heading {
+  display: none;
+}
+
 header {
   background-color: #ffffff;
   /* 
