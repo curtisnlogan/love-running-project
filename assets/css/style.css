@@ -297,6 +297,12 @@ own divs, allows for easy targeting of all individual elements in the list
 }
 
 .meetups__times div {
+  /* 
+  flex shorthand grow / flex-basis
+  non auto value for basis to ensure columns on typical smartphones
+  */
+  flex: 1 200px;
+  padding: 15px;
   /* off white */
   color: #fafafa;
   /* rgba for that useful opacity value at the very end */
