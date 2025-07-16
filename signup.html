@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <!-- hey! i want to write some html and i will be using english -->
 <html lang="en">
-<!-- head contains the metadata -->
+  <!-- head contains the metadata -->
 
-<head>
+  <head>
     <!-- This attribute declares the page's character encoding. -->
     <meta charset="UTF-8" />
     <!--
@@ -14,47 +14,69 @@
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- meta tags for SEO -->
-    <meta name="description" content="Love running. Club for runners in Dublin, Ireland.
-     Urban running, trail running. Dublin docklands and Phoenix Park." />
-    <meta name="keywords" content="love running, run, running club,
-    runners, Ireland, Dublin, sport, exercise" />
+    <meta
+      name="description"
+      content="Love running. Club for runners in Dublin, Ireland.
+     Urban running, trail running. Dublin docklands and Phoenix Park."
+    />
+    <meta
+      name="keywords"
+      content="love running, run, running club,
+    runners, Ireland, Dublin, sport, exercise"
+    />
     <!-- browser tab name -->
     <title>Love Running</title>
     <!-- favicon icon that appears in the tab bar  -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
     <!-- linking my css style file to my html -->
     <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<!-- body is what the user will see -->
+  </head>
+  <!-- body is what the user will see -->
 
-<body>
+  <body>
     <!-- 
     more broadly, it's for introductory content for its nearest ancestor sectioning
     content or sectioning root. this can include not just navigation, 
     but also logos, search forms, and headings.
     -->
     <header>
-        <a href="index.html">
-            <h1 class="logo">Love Running</h1>
-        </a>
-        <input type="checkbox" name="nav-toggle" id="nav-toggle" />
-        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
-        <nav>
-            <!-- use classes over ids by default -->
-            <ul class="menu">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="gallery.html">Gallery</a>
-                </li>
-                <li>
-                    <a class="active" href="signup.html">Sign Up</a>
-                </li>
-            </ul>
-        </nav>
+      <a href="index.html">
+        <h1 class="logo">Love Running</h1>
+      </a>
+      <input type="checkbox" name="nav-toggle" id="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <nav>
+        <!-- use classes over ids by default -->
+        <ul class="menu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a class="active" href="signup.html">Sign Up</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <!--
     It's designated for the primary content of the <body> of a document. 
@@ -85,30 +107,57 @@
     copyright data, and links to related documents, just as you said.
     -->
     <footer>
-        <!-- list to hold social media icon links -->
-        <ul class="social-networks">
-            <!--
+      <!-- list to hold social media icon links -->
+      <ul class="social-networks">
+        <!--
         The rel="noopener" attribute is a security feature for HTML links. 
         When you add it to an <a> tag, it prevents the new page from being able to access and control the original page that opened it. 
         -->
-            <li><a href="http://www.facebook.com" target="_blank" rel="noopener"
-                    aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
-            </li>
-            <li><a href="http://www.x.com" target="_blank" rel="noopener"
-                    aria-label="Visit our X page (opens in a new tab)"><i class="fa-brands fa-x-twitter"></i></a></li>
-            <li><a href="http://www.youtube.com" target="_blank" rel="noopener"
-                    aria-label="Visit our Youtube page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
-            </li>
-            <li><a href="http://www.instagram.com" target="_blank" rel="noopener"
-                    aria-label="Visit our Instagram page (opens in a new tab)"><i
-                        class="fa-brands fa-instagram"></i></a></li>
-        </ul>
+        <li>
+          <a
+            href="http://www.facebook.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Visit our Facebook page (opens in a new tab)"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="http://www.x.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Visit our X page (opens in a new tab)"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="http://www.youtube.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Visit our Youtube page (opens in a new tab)"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="http://www.instagram.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Visit our Instagram page (opens in a new tab)"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
     </footer>
     <!-- 
     will render everything that is visible first before the browser
     moves on to the JS which can be time-consuming 
     -->
-    <script src="https://kit.fontawesome.com/bfcb8b36c6.js" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/bfcb8b36c6.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
