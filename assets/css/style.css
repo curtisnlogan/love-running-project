@@ -348,6 +348,14 @@ footer {
   padding: 5%;
   color: #3a3a3a;
 }
+
+@media screen and (min-width: 576px) {
+  .gallery__photos {
+    column-count: 2;
+    column-gap: 0;
+  }
+}
+
 /* media query for tablets and larger (768px typical standard breakpoint) */
 @media screen and (min-width: 768px) {
   nav {
