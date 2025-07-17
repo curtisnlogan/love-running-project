@@ -366,6 +366,29 @@ input {
   */
   margin: 1.875rem 1.25rem 1.25rem;
 }
+/* 
+child selector because i don't want to change 
+the radios which are also inputs 
+*/
+.signup__form > input {
+  /* 
+  rem again instead of pixels as tutor suggested, 
+  if user scales their own font size the height of 
+  the input box will scale to accommodate it with rem
+  */
+  height: 1.5rem;
+  /* 
+  ensures each input element is as wide 
+  as the form parents content box 
+  */
+  width: 100%;
+  padding: 0.3rem;
+  margin: 0.3rem 0 1.25rem 0;
+  color: #fafafa;
+  background-color: transparent;
+  border: 1px solid #fafafa;
+  border-radius: 2px;
+}
 
 .signup__radio-btns {
   display: flex;
