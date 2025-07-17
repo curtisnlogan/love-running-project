@@ -490,6 +490,12 @@ footer {
     column-count: 3;
     column-gap: 0;
   }
+  /* signup page */
+  .signup {
+    background-position: 50%;
+    /* so the form child can be positioned absolutely */
+    position: relative;
+  }
 }
 /* large devices: laptops and desktops 992px and upwards */
 @media screen and (min-width: 992px) {
