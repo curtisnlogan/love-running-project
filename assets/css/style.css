@@ -351,6 +351,8 @@ own divs, allows for easy targeting of all individual elements in the list
   margin: 20% 10% 30% 10%;
 }
 
+.signup__form label, input {
+  margin: 0 30px;
 }
 
 .signup__title {
