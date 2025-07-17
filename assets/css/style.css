@@ -339,6 +339,17 @@ own divs, allows for easy targeting of all individual elements in the list
   flex: 1 auto;
   /* targeting what position in the image itself, i want to be my center point */
   background-position: 80%;
+  
+}
+
+.signup__title {
+  color: #fafafa;
+  /* 
+  coach suggested px but as these margins relate to text content
+  rem would scale in tandem with any increase in the default font size
+  that the user could enable in their browser 
+  */
+  margin: 1.875rem 1.25rem 1.25rem;
 }
 
 
