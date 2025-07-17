@@ -103,31 +103,33 @@
 
           <label for="signup__email_address">Email Address</label>
           <input type="email" name="email_address" id="signup__email-address" />
+          
+          <div class="signup__radio-btns">
+            <label for="signup__radio-road">Road</label>
+            <input
+              type="radio"
+              name="running_preference"
+              value="road"
+              id="signup__radio-road"
+              checked
+            />
 
-          <label for="signup__radio-road">Road</label>
-          <input
-            type="radio"
-            name="running_preference"
-            value="road"
-            id="signup__radio-road"
-            checked
-          />
+            <label for="signup__radio-trail">Trail</label>
+            <input
+              type="radio"
+              name="running_preference"
+              value="trail"
+              id="signup__radio-trail"
+            />
 
-          <label for="signup__radio-trail">Trail</label>
-          <input
-            type="radio"
-            name="running_preference"
-            value="trail"
-            id="signup__radio-trail"
-          />
-
-          <label for="signup__radio-both">Both</label>
-          <input
-            type="radio"
-            name="running_preference"
-            value="both"
-            id="signup__radio-both"
-          />
+            <label for="signup__radio-both">Both</label>
+            <input
+              type="radio"
+              name="running_preference"
+              value="both"
+              id="signup__radio-both"
+            />
+          </div>
 
           <button class="signup__submit-btn" type="submit">Let's Run!</button>
         </form>
