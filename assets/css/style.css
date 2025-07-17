@@ -366,6 +366,12 @@ input {
   margin: 1.875rem 1.25rem 1.25rem;
 }
 
+.signup__radio-btns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .signup__submit-btn {
   margin: 0 0 30px 0;
   border-radius: 2px;
