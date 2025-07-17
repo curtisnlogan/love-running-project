@@ -337,7 +337,7 @@ own divs, allows for easy targeting of all individual elements in the list
 
 .signup {
   background: url(../images/signup-image.webp) center / cover;
-  flex: 1 auto;
+  flex: 1;
   /* targeting what position in the image itself, i want to be my center point */
   background-position: 80%;
   
