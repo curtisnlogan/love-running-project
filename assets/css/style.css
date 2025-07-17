@@ -332,6 +332,7 @@ own divs, allows for easy targeting of all individual elements in the list
 /* signup webpage */
 .main__flex {
   display: flex;
+  flex-direction: column;
 }
 
 .signup {
