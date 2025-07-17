@@ -348,6 +348,9 @@ own divs, allows for easy targeting of all individual elements in the list
 .signup__form {
   color: #ffffff;
   background-color: rgba(60, 60, 60, 0.6);
+  margin: 20% 10% 30% 10%;
+}
+
 }
 
 .signup__title {
