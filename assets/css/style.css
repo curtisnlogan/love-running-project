@@ -352,11 +352,6 @@ own divs, allows for easy targeting of all individual elements in the list
   padding: 5% 5%;
 }
 
-.signup__form label,
-input {
-  margin: 0 30px;
-}
-
 .signup__title {
   color: #fafafa;
   /* 
