@@ -340,7 +340,6 @@ own divs, allows for easy targeting of all individual elements in the list
   flex: 1;
   /* targeting what position in the image itself, i want to be my center point */
   background-position: 80%;
-  
 }
 
 .signup__form {
@@ -357,7 +356,6 @@ own divs, allows for easy targeting of all individual elements in the list
   */
   margin: 1.875rem 1.25rem 1.25rem;
 }
-
 
 footer {
   background-color: orange;
