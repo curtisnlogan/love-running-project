@@ -519,6 +519,15 @@ footer {
     /* so the form child can be positioned absolutely */
     position: relative;
   }
+
+  .signup__form {
+    /* 
+    taken out of normal document flow and positioned
+    relative to its nearest non-static ancestor which is
+    .signup in this case 
+    */
+    position: absolute;
+  }
 }
 /* large devices: laptops and desktops 992px and upwards */
 @media screen and (min-width: 992px) {
