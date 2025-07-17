@@ -1,6 +1,6 @@
 # Love Running
 
-![Love Running Website Mockup](https://raw.githubusercontent.com/curtisnlogan/love-running/main/assets/readme-images/love-running-mockup.png)
+[**View Live Project**](https://curtisnlogan.github.io/love-running/)
 
 Welcome to the Love Running project repository. This website was developed as part of the Code Institute's Full-Stack Software Developer program. It serves as a fictional running club's informational site, featuring a home page, a gallery, and a signup form.
 
@@ -48,8 +48,6 @@ This project was a significant learning experience. While following the core cur
 ## Getting Started
 
 To view the live project, you can visit the GitHub Pages deployment here:
-
-[**View Live Project**](https://curtisnlogan.github.io/love-running/)
 
 To run this project locally:
 
