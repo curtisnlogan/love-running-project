@@ -1,6 +1,6 @@
 # Love Running Website
 
-[**View Live Project**](https://curtisnlogan.github.io/love-running/)
+[**View Live Project**](https://curtisnlogan.github.io/love-running-website/)
 
 Welcome to the Love Running project repository. This website was developed as part of the Code Institute's Full-Stack Software Developer program. It serves as a fictional running club's informational site, featuring a home page, a gallery, and a signup form.
 
