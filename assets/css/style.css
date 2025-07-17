@@ -102,7 +102,7 @@ header a {
 targets only the children of menu, in-case of nested lists
 which a descendant selector like 'menu li' would also target 
 */
-.menu > li {
+.menu>li {
   margin-bottom: 1.1rem;
 }
 
@@ -143,7 +143,7 @@ nav {
 }
 
 /* when checked will display the nav elements to the user */
-#nav-toggle:checked ~ nav {
+#nav-toggle:checked~nav {
   /* 
   nav now behaves like a box level element in the current flow
   when it is checked
@@ -169,6 +169,7 @@ main {
   display: flex;
   flex-direction: column;
 }
+
 /* main image on home page */
 .hero {
   height: 600px;
@@ -195,9 +196,10 @@ main {
   padding-top: 40px;
   padding-left: 10px;
 }
+
 /* targets the h2 and h3 children of the cover-text div */
-.cover-text > h2,
-.cover-text > h3 {
+.cover-text>h2,
+.cover-text>h3 {
   color: #ffffff;
 }
 
@@ -331,6 +333,7 @@ own divs, allows for easy targeting of all individual elements in the list
   */
   vertical-align: bottom;
 }
+
 /* signup webpage */
 
 .signup {
@@ -361,11 +364,12 @@ own divs, allows for easy targeting of all individual elements in the list
   */
   margin: 1.875rem 1.25rem 1.25rem;
 }
+
 /* 
 child selector because i don't want to change 
 the radios which are also inputs 
 */
-.signup__form > input {
+.signup__form>input {
   /* 
   rem again instead of pixels as tutor suggested, 
   if user scales their own font size the height of 
@@ -423,6 +427,7 @@ footer {
   justify-content: space-evenly;
   list-style-type: none;
 }
+
 /* targets all descendants of type i in my social-networks list */
 .social-networks i {
   /* use % instead of rem here as no text involved */
@@ -455,24 +460,27 @@ footer {
     /* pleasant looking whitespace all around the nav elements */
     padding: 1rem;
   }
+
   /* we want the nav elements to display as row now so this is a great way to do it */
   .menu {
     display: flex;
   }
 
-  .menu > li {
+  .menu>li {
     padding: 1rem;
   }
 
   .nav-toggle-label {
     display: none;
   }
+
   /* logo should probably be bigger on larger screens! */
   .logo {
     font-size: 3rem;
     line-height: 4.5rem;
     margin: 0 0.5rem;
   }
+
   /* not ideal way to do this but main content now hidden partly by header due to
   increased logo font size. so it needs to have a taller margin */
   main {
@@ -483,6 +491,7 @@ footer {
     width: 35%;
     right: 30px;
   }
+
   /*
   does not merge these two divs in-to one flex container
   merely a quick way to apply flex to both classes at once
@@ -494,12 +503,12 @@ footer {
     width: 100%;
   }
 
-  .reasons__health-group > div,
-  .reasons__mental-group > div {
+  .reasons__health-group>div,
+  .reasons__mental-group>div {
     width: 75%;
   }
 
-  .reasons__mental-group > div {
+  .reasons__mental-group>div {
     text-align: end;
     align-self: flex-end;
   }
@@ -508,6 +517,7 @@ footer {
     column-count: 3;
     column-gap: 0;
   }
+
   /* signup page */
   .signup {
     background-position: 50%;
@@ -540,7 +550,7 @@ footer {
     padding: 1rem;
   }
 
-  .signup__form > input:hover {
+  .signup__form>input:hover {
     border-color: #f16c6b;
   }
 
@@ -549,8 +559,10 @@ footer {
     color: #454b1b;
   }
 }
+
 /* large devices: laptops and desktops 992px and upwards */
 @media screen and (min-width: 992px) {
+
   /*  */
   .menu a:hover {
     border-bottom: 1px solid #3a3a3a;
@@ -568,7 +580,7 @@ footer {
     flex-direction: row;
   }
 
-  .reasons__list > div {
+  .reasons__list>div {
     /* 
     `flex: 1;
       ` is a shorthand in CSS Flexbox that sets `flex-grow: 1;
@@ -592,7 +604,7 @@ footer {
     order: 1;
   }
 
-  .reasons__mental-group > div {
+  .reasons__mental-group>div {
     /*  
     Flexbox works on a single level of direct parent-child relationship. If you want a nested element to participate in a flex layout,
     its immediate parent must be declared as a flex container (display: flex; or display: inline-flex; ). This allows you to create complex,
@@ -601,7 +613,7 @@ footer {
     align-self: flex-start;
   }
 
-  .reasons__health-group > div {
+  .reasons__health-group>div {
     align-self: flex-end;
   }
 }
