@@ -360,6 +360,27 @@ own divs, allows for easy targeting of all individual elements in the list
   margin: 1.875rem 1.25rem 1.25rem;
 }
 
+.signup__submit-btn {
+  margin: 0 0 30px 0;
+  border-radius: 2px;
+  background-color: #454b1b;
+  color: #fafafa;
+  /* 
+  tutor said to use 100% but no font-sizes were defined through all of 
+  this elements parents and grandparents
+  got to the html whose default font size is 16px
+  hence 1rem would do the same thing as 100% but is more appropriate for fonts
+  typically, as does not rest on complex inheritance hierarchies
+  */
+  font-size: 1rem;
+  /* again px was suggested but rem will allow padding to also scale
+  proportionally to any user browser font size change */
+  padding: 1rem 2rem;
+  /* again px was suggested but rem will allow margin to also scale
+  proportionally to any user browser font size change */
+  margin: 1.25rem 0 1.875rem 1.875rem;
+}
+
 footer {
   background-color: orange;
 }
