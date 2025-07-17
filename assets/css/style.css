@@ -527,6 +527,22 @@ footer {
     .signup in this case 
     */
     position: absolute;
+    /* 
+    margin bottom does not do anything on this 
+    absolutely positioned element with default 
+    anchoring, as there is nothing below it 
+    from which to push away from
+    it is pinned by default to the top
+    By default, a container's height grows 
+    with its content
+    there is no finite bottom boundary
+    since there's no pre-defined height to fill
+    margin-bottom has nothing to push against to change the element's height
+    You have to create that boundary yourself 
+    by setting a bottom property
+    */
+    margin: 10rem 28rem 0 6rem;
+    padding: 1rem;
   }
 
   .signup__form > input:hover {
