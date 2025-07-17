@@ -1,4 +1,4 @@
-# Love Running
+# Love Running Website
 
 [**View Live Project**](https://curtisnlogan.github.io/love-running/)
 
