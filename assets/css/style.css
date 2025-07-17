@@ -528,6 +528,15 @@ footer {
     */
     position: absolute;
   }
+
+  .signup__form > input:hover {
+    border-color: #f16c6b;
+  }
+
+  .signup__form button:hover {
+    background-color: #fafafa;
+    color: #454b1b;
+  }
 }
 /* large devices: laptops and desktops 992px and upwards */
 @media screen and (min-width: 992px) {
