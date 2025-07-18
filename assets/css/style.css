@@ -49,6 +49,7 @@ h3 {
   color: #252525;
 }
 
+.gallery__hidden-heading,
 .meetups__hidden-heading {
   display: none;
 }
