@@ -45,24 +45,6 @@ This project was a significant learning experience. While following the core cur
 
 ---
 
-## Getting Started
-
-To view the live project, you can visit the GitHub Pages deployment here:
-
-To run this project locally:
-
-1.  Clone the repository:
-    ```bash
-    git clone [https://github.com/curtisnlogan/love-running.git](https://github.com/curtisnlogan/love-running.git)
-    ```
-2.  Navigate to the project directory:
-    ```bash
-    cd love-running
-    ```
-3.  Open the `index.html` file in your web browser.
-
----
-
 ## Acknowledgements
 
 * This project was completed as a portfolio piece for the [**Code Institute**](https://codeinstitute.net) Full-Stack Software Developer program. I am grateful for the structured learning, expert guidance, and supportive community.
