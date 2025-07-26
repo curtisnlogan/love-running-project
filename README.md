@@ -6,32 +6,6 @@ Welcome to the Love Running project repository. This website was developed as pa
 
 ---
 
-## About The Project
-
-The primary goal of this project was to build a static website using HTML5 and CSS3, putting fundamental web development principles into practice. The development process was a blend of guided walkthroughs provided by Code Institute and self-guided challenges that required independent research and problem-solving. This approach was instrumental in building a solid foundation in front-end development and professional developer workflows.
-
-A key focus throughout the project was adhering to a professional Git workflow. As you can see from the commit history, work was organized into distinct, well-documented commits, reflecting an industry-standard approach to version control.
-
----
-
-## Key Features
-
-* **Responsive Design:** The website is designed to be accessible and visually appealing across a range of devices, from mobile phones to desktop screens.
-* **Home Page:** A welcoming landing page that introduces the running club.
-* **Media Gallery:** A gallery page showcasing photos of the club and its members.
-* **Interactive Signup Form:** A user-friendly form for new members to register their interest.
-
----
-
-## Technologies Used
-
-This project was built using the following core technologies:
-
-* [**HTML5**](https://en.wikipedia.org/wiki/HTML5)
-* [**CSS3**](https://en.wikipedia.org/wiki/CSS)
-
----
-
 ## Development & Learning Journey
 
 This project was a significant learning experience. While following the core curriculum, many aspects required deep-dives into documentation and online resources to solve specific challenges. Key learning takeaways include:
