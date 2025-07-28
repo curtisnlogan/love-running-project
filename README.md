@@ -2,6 +2,8 @@
 
 [**View Live Project**](https://curtisnlogan.github.io/love-running/)  
 
+Semi-guided project.
+
 ---
 
 ## Development & Learning Journey
