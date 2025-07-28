@@ -14,8 +14,7 @@ This project was a significant learning experience. While following the core cur
 * **Semantic HTML:** A strong focus on using semantic HTML5 tags for better structure, accessibility, and SEO.
 * **Git & GitHub Workflow:** Practiced a professional version control workflow, including:
     * Making small, atomic commits with clear, conventional commit messages.
-    * Using branches for the first-time, as different parts of the website were built
-* **Problem-Solving:** Independently researching and implementing solutions for styling and layout challenges that went beyond the guided tutorials.
+    * Using branches for the first-time, as different parts of the website were built.
 
 ---
 
