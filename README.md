@@ -2,10 +2,6 @@
 
 [**View Live Project**](https://curtisnlogan.github.io/love-running/)  
 
-Semi-guided project.
-
----
-
 ## Development & Learning Journey
 
 This project was a significant learning experience. While following the core curriculum, many aspects required deep-dives into documentation and online resources to solve specific challenges. Key learning takeaways include:
