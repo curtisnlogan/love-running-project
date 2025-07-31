@@ -8,8 +8,6 @@ This project was a significant learning experience. While following the core cur
     * Making small, atomic commits with clear, conventional commit messages.
     * Using branches for the first-time, as different parts of the website were built.
 
----
-
 ## Acknowledgements
 
 * This project was completed as a portfolio piece for the [**Code Institute**](https://codeinstitute.net) Full-Stack Software Developer program. I am grateful for the structured learning, expert guidance, and supportive community.
